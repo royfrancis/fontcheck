@@ -1,0 +1,113 @@
+
+/*-- scss:defaults --*/
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Mono&family=IBM+Plex+Mono&family=Inconsolata&family=JetBrains+Mono&family=Noto+Sans+Mono&family=Oxygen+Mono&family=PT+Mono&family=Roboto+Mono&family=Source+Code+Pro&family=Space+Mono&family=Spline+Sans+Mono&family=Victor+Mono&display=swap');
+
+/* font bunny
+@import url(https://fonts.bunny.net/css?family=fira-code:400|fira-mono:400|ibm-plex-mono:400|inconsolata:400|jetbrains-mono:400|noto-sans-mono:400|oxygen-mono:400|roboto-mono:400|source-code-pro:400|space-mono:400|spline-sans-mono:400);
+*/
+
+@font-face {
+  font-family: 'Cascadia Mono';
+  src: url('assets/fonts/cascadia-mono.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Dank Mono';
+  src: url('assets/fonts/dank-mono.otf') format('opentype');
+}
+
+
+@font-face {
+  font-family: 'Fantasque Sans Mono';
+  src: url('assets/fonts/fantasque-sans-mono.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: url('assets/fonts/hack.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Hasklig';
+  src: url('assets/fonts/hasklig.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Liberation Mono';
+  src: url('assets/fonts/liberation-mono.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Meslo';
+  src: url('assets/fonts/meslo.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  src: url('assets/fonts/sf-mono.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: url('assets/fonts/ubuntu-mono.ttf') format('truetype');
+}
+
+
+/*-- scss:rules --*/
+
+.font-item {
+  display: grid;
+  grid-template-columns: 2fr 9fr;
+  grid-template-rows: auto;
+  grid-column-gap: 0.5em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+.font-code {
+  background-color: #f2f3f4;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 5px;
+  //white-space: pre-wrap;
+  font-weight: 400;
+}
+
+.font-code p {
+  margin: 0;
+  white-space: pre;
+}
+
+.font-label p {
+  margin-bottom: 0;
+}
+
+.font-label {
+  align-items: center;
+  justify-content: right;
+  display: flex;
+}
+
+.source {
+  background-color: whitesmoke;
+  padding: 0.1em;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  border-right: 1em;
+}
+
+form select {
+  width: auto !important;
+}
+
+.rt-table {
+  line-height: 0.8;
+}
+
+.reactable {
+  width: auto;
+}

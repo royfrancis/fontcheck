@@ -1,0 +1,139 @@
+---
+title: FontCheck
+description: Mono-spaced font families for coding
+---
+
+::::: {.panel-tabset}
+
+## Settings
+
+:::: {.grid}
+::: {.g-col-4}
+
+```{ojs}
+viewof choice = Inputs.select(["Selection", "Text"], {label: "Input type", multiple: false})
+//viewof size = Inputs.range([1, 2], {value: 1, step: 0.1, label: "Font size"})
+```
+
+:::
+::: {.g-col-8}
+
+```{ojs}
+viewof text = {
+  if (choice === "Selection") {
+
+    return Inputs.select([
+    "oO08 iIlL1 g9qCGQ ~-+=>",
+    "oöäøO0Ø |Ll1Iit7 '!#%&/\\ ()[]{}<> $¢@*^~-:;,_±|?+= agktpry",
+    "H= x= += -= <= >= ~= ^= |= %= -> &=",
+    "== != && ++ |> <> <- <= <~ /= |=> -> ->> __",
+    ",. :;",
+    "|Ll1It!",
+    "[](){}<>@#",
+    
+    "The quick brown box jumps over a lazy dog",
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ ÅÄÆÖØÑ",
+    "abcdefghlijklmnopqrstuvwxyz åäæöøñ",
+    "0123456789 QRTCZ",
+    "|[acersuvwxzmno i btfhkl d gjpqy]|",
+    "0oöäøO",
+    "print('hello world')",
+    'cat("Mean of 1, 2, 3 is", mean(c(1, 2, 3)))',
+    'echo "Current directory contents:" && ls -l',
+    'SELECT name, age FROM users WHERE age > 30 ORDER BY age DESC;',
+    "body { font-family: 'Arial', sans-serif; color: #333; }",
+    '<!DOCTYPE html><html><body><h1>Hello, World!</h1></body></html>',
+    'print(f"Sum of 1, 2, and 3 is: {sum([1, 2, 3])}',
+    'console.log(`Array sorted: ${[3, 1, 4].sort((a, b) => a - b)}`);',
+    'std::cout << "Max of 10 and 20 is " << std::max(10, 20) << std::endl;'
+    ],{label: "Select text"});
+
+  } else if (choice === "Text") {
+    return Inputs.textarea({label: "Enter text", value: 
+`
+if (result > 5 && x <= 3 | !is.na(x)){
+  print('Condition met')
+} else {
+  print('Condition not met')
+}
+`.trim()
+    
+    });
+  }
+}
+```
+
+:::
+::::
+:::::
+
+::: {.panel-tabset}
+
+## Fonts
+
+::: {.font-parent}
+
+```{r}
+#| results: asis
+#| 
+library(dplyr)
+
+dfr <- read.delim("fonts.tsv", sep = "\t", header = TRUE) %>% arrange(font)
+# families <- c("Inconsolata", "Roboto Mono", "Source Code Pro", "IBM Plex Mono", "JetBrains Mono", "Fira Mono", "Oxygen Mono", "Victor Mono", "Space Mono", "PT Mono", "Noto Sans Mono", "Spline Sans Mono")
+families <- dfr$font
+links <- dfr$link
+sources <- dfr$source
+
+for (i in seq_along(families)) {
+    family <- families[i]
+    cat("::: {.font-item}\n")
+    cat("::: {.font-label}\n")
+    cat(paste0(family, "\n"))
+    cat(":::\n")
+    cat(paste0("::: {.font-code style=\"font-family: '", family, "' !important; font-size: ${size}rem;\"}\n"))
+    cat("${text}\n")
+    cat(":::\n")
+    cat(":::\n")
+}
+```
+
+:::
+
+## Info
+
+### Properties
+
+```{r}
+library(gt)
+
+dfr %>%
+    mutate(source = paste0("<span class='source'><a href='", link, "'>", source, "</span>")) %>%
+    select(font, source, ligature) %>%
+    gt() %>%
+    fmt_markdown(columns = "source") %>%
+    opt_row_striping(row_striping = FALSE) %>%
+    opt_interactive(use_pagination=FALSE, use_pagination_info=FALSE) %>%
+    tab_options(table.align = "left")
+```
+
+
+### Test fonts
+
+These sites take you through the considerations for selecting fonts for coding. You can also test and try out differents for your use-case.
+
+- [Programming Fonts](https://www.programmingfonts.org/)
+- [Hacking CPP](https://hackingcpp.com/dev/coding_fonts.html)
+- [Victor Mono](https://rubjo.github.io/victor-mono/)
+
+### Repositories
+
+Where to find fonts? The easiest option is webfonts where you can link the fonts rather than download them.
+
+- [Google Fonts](https://fonts.google.com)
+- [Bunny Fonts](https://fonts.bunny.net)
+
+The other option is to download the fonts and use them in your project. There are many fonts on Github.
+
+- [Font Squirrel](https://www.fontsquirrel.com)
+
+:::

@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  page-footer:
+    border: false
+    left: "2024 Roy Francis"
+    right: "Published with [Quarto](https://quarto.org/) v<?quarto.version?>"
+  site-url: "https://royfrancis.github.io/fontcheck/"
+
+format:
+  html:
+    quarto-required: ">=1.4"
+    #include-in-header: "assets/head.html"
+    theme:
+      light: [lux, assets/styles.scss]
+    page-layout: full
+    title-block-banner: true
+    df-print: kable
+
+engine: knitr
+
+execute:
+  echo: false
+  message: false
+  warning: false
+
+filters: 
+  - assets/custom.lua

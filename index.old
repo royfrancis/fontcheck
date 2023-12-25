@@ -1,0 +1,171 @@
+---
+title: FontCheck
+description: Preview of mono-spaced coding font families
+---
+
+::: {.panel-tabset}
+
+## Preview
+
+::: {.grid-parent}
+::: {.grid-child}
+
+#### Inconsolata
+
+::: {.text-style style="font-family:'Inconsolata' !important;"}
+${text}
+:::
+:::
+
+::: {.grid-child}
+
+#### Roboto Mono
+
+::: {.text-style style="font-family:'Roboto Mono'  !important;;"}
+${text}
+:::
+:::
+
+::: {.grid-child}
+
+#### Source Code Pro
+
+::: {.text-style style="font-family:'Source Code Pro'  !important;;"}
+${text}
+:::
+
+:::
+
+::: {.grid-child}
+
+#### IBM Plex Mono
+
+::: {.text-style style="font-family:'IBM Plex Mono'  !important;;"}
+${text}
+:::
+
+:::
+
+::: {.grid-child}
+
+#### Fira Mono
+
+::: {.text-style style="font-family:'Fira Mono'  !important;;"}
+${text}
+:::
+
+:::
+
+::: {.grid-child}
+
+#### Oxygen Mono
+
+::: {.text-style style="font-family:'Oxygen Mono'  !important;;"}
+${text}
+:::
+
+:::
+
+::: {.grid-child}
+
+#### Space Mono
+
+::: {.text-style style="font-family:'Space Mono'  !important;;"}
+${text}
+:::
+
+:::
+
+::: {.grid-child}
+
+#### PT Mono
+
+::: {.text-style style="font-family:'PT Mono'  !important;;"}
+${text}
+:::
+
+:::
+
+::: {.grid-child}
+
+#### Noto Sans Mono
+
+::: {.text-style style="font-family:'Noto Sans Mono'  !important;;"}
+${text}
+:::
+
+:::
+
+::: {.grid-child}
+
+#### Spline Sans Mono
+
+::: {.text-style style="font-family:'Spline Sans Mono'  !important;;"}
+${text}
+:::
+
+:::
+
+::: {.grid-child}
+
+#### Overpass Mono
+
+::: {.text-style style="font-family:'Overpass Mono'  !important;;"}
+${text}
+:::
+
+:::
+
+::: {.grid-child}
+
+#### Victor Mono
+
+::: {.text-style style="font-family:'Victor Mono'  !important;;"}
+${text}
+:::
+
+:::
+
+::: {.grid-child}
+
+#### JetBrains Mono
+
+::: {.text-style style="font-family:'JetBrains Mono'  !important;;"}
+${text}
+:::
+
+:::
+
+:::
+
+## Settings
+
+### Settings
+
+```{ojs}
+viewof text = Inputs.textarea({label: "Text",value: "0oöäøO|Ll1Iti7'`!#%&/()[]$@*^~<>-:;,_±|?+=agkmnpry\n\nif (result > 5 && x <= 3 | !is.na(x))\n {\n  print('Condition met')\n  } else {\n    print('Condition not met'\n)}"})
+```
+
+**Text:** ${text}
+
+```{ojs}
+viewof font = Inputs.select(["Inconsolata", "Roboto Mono", "Source Code Pro", "IBM Plex Mono", "JetBrains Mono", "Fira Mono", "Oxygen Mono", "Victor Mono", "Space Mono", "PT Mono", "Noto Sans Mono", "Spline Sans Mono", "Overpass Mono"], {label: "Fonts", multiple: false})
+```
+
+**Font:** ${font}
+
+```{ojs}
+viewof size = Inputs.range([5, 50], {value: 5, step: 1, label: "Font size"})
+```
+
+**Font size:** ${size}px
+
+<br>
+
+#### Links
+
+- [Google fonts](https://fonts.google.com)
+- [hackingcpp](https://hackingcpp.com/dev/coding_fonts.html)
+- [Victor Mono](https://rubjo.github.io/victor-mono/)
+
+:::
