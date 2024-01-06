@@ -59,7 +59,7 @@
 
 .font-item {
   display: grid;
-  grid-template-columns: 2fr 9fr;
+  grid-template-columns: 3fr 10fr;
   grid-template-rows: auto;
   grid-column-gap: 0.5em;
   margin-top: 0.3em;
@@ -110,4 +110,41 @@ form select {
 
 .reactable {
   width: auto;
+}
+
+.quarto-title .title {
+  color: white;
+}
+
+.font-icon {
+  font-size: 0.6em;
+  color: white;
+  padding: 0 3px;
+  margin: 0 2px;
+  border-radius: 4px;
+  background-color: #BDBDBD;
+}
+
+.font-icon-google {
+  background-color: #4285F4;
+}
+
+.font-icon-ligature {
+  background-color: #795548;
+}
+
+.font-icon-group {
+  margin: 0 3px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px
+}
+
+.font-icon-parent {
+  display: flex;
+  align-items: center;
+}
+
+.font-small {
+  font-size: 0.8em;
 }

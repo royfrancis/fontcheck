@@ -28,3 +28,4 @@ execute:
 
 filters: 
   - assets/custom.lua
+  - fontawesome

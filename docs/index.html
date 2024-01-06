@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.506">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -73,19 +73,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -101,9 +97,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
 <link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+
 <script src="site_libs/core-js-2.5.3/shim.min.js"></script>
-<script src="site_libs/react-18.2.0/react.min.js"></script>
-<script src="site_libs/react-18.2.0/react-dom.min.js"></script>
+<script src="site_libs/react-17.0.0/react.min.js"></script>
+<script src="site_libs/react-17.0.0/react-dom.min.js"></script>
 <script src="site_libs/reactwidget-1.0.0/react-tools.js"></script>
 <script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
 <link href="site_libs/reactable-0.4.4/reactable.css" rel="stylesheet">
@@ -129,7 +126,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
     
   
-  <div class="quarto-title-meta column-page">
+  <div class="quarto-title-meta">
 
       
     
@@ -143,7 +140,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     
 <!-- main -->
 <main class="content quarto-banner-title-block column-page" id="quarto-document-content">
-
 
 
 
@@ -226,7 +222,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="font-parent">
 <div class="font-item">
 <div class="font-label">
-<p>Cascadia Mono</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><a href="https://www.fontsquirrel.com/fonts/cascadia-code"><span class="font-icon font-icon-link"><i class="fa-solid fa-link" aria-label="link"></i></span></a></span> <span class="font-family">Cascadia Mono</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Cascadia Mono' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-1"></span></span></p>
@@ -234,7 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>Dank Mono</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><span class="font-icon font-icon-ligature"><i class="fa-solid fa-pen-nib" aria-label="pen-nib"></i></span><a href="https://philpl.gumroad.com/l/dank-mono"><span class="font-icon font-icon-link"><i class="fa-solid fa-link" aria-label="link"></i></span></a></span> <span class="font-family">Dank Mono</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Dank Mono' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-2"></span></span></p>
@@ -242,7 +238,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>Fantasque Sans Mono</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><span class="font-icon font-icon-ligature"><i class="fa-solid fa-pen-nib" aria-label="pen-nib"></i></span><a href="https://www.fontsquirrel.com/fonts/fantasque-sans-mono"><span class="font-icon font-icon-link"><i class="fa-solid fa-link" aria-label="link"></i></span></a></span> <span class="font-family">Fantasque Sans Mono</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Fantasque Sans Mono' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-3"></span></span></p>
@@ -250,7 +246,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>Fira Code</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><span class="font-icon font-icon-ligature"><i class="fa-solid fa-pen-nib" aria-label="pen-nib"></i></span><a href="https://fonts.google.com/specimen/Fira+Code"><span class="font-icon font-icon-google"><i class="fa-brands fa-google" aria-label="google"></i></span></a></span> <span class="font-family">Fira Code</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Fira Code' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-4"></span></span></p>
@@ -258,7 +254,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>Fira Mono</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><a href="https://fonts.google.com/specimen/Fira+Mono"><span class="font-icon font-icon-google"><i class="fa-brands fa-google" aria-label="google"></i></span></a></span> <span class="font-family">Fira Mono</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Fira Mono' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-5"></span></span></p>
@@ -266,7 +262,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>Hack</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><a href="https://www.fontsquirrel.com/fonts/hack"><span class="font-icon font-icon-link"><i class="fa-solid fa-link" aria-label="link"></i></span></a></span> <span class="font-family">Hack</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Hack' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-6"></span></span></p>
@@ -274,7 +270,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>Hasklig</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><span class="font-icon font-icon-ligature"><i class="fa-solid fa-pen-nib" aria-label="pen-nib"></i></span><a href="https://github.com/i-tu/Hasklig"><span class="font-icon font-icon-link"><i class="fa-solid fa-link" aria-label="link"></i></span></a></span> <span class="font-family">Hasklig</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Hasklig' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-7"></span></span></p>
@@ -282,7 +278,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>IBM Plex Mono</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><a href="https://fonts.google.com/specimen/IBM+Plex+Mono"><span class="font-icon font-icon-google"><i class="fa-brands fa-google" aria-label="google"></i></span></a></span> <span class="font-family">IBM Plex Mono</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'IBM Plex Mono' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-8"></span></span></p>
@@ -290,7 +286,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>Inconsolata</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><a href="https://fonts.google.com/specimen/Inconsolata"><span class="font-icon font-icon-google"><i class="fa-brands fa-google" aria-label="google"></i></span></a></span> <span class="font-family">Inconsolata</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Inconsolata' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-9"></span></span></p>
@@ -298,7 +294,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>JetBrains Mono</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><span class="font-icon font-icon-ligature"><i class="fa-solid fa-pen-nib" aria-label="pen-nib"></i></span><a href="https://fonts.google.com/specimen/JetBrains+Mono"><span class="font-icon font-icon-google"><i class="fa-brands fa-google" aria-label="google"></i></span></a></span> <span class="font-family">JetBrains Mono</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'JetBrains Mono' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-10"></span></span></p>
@@ -306,7 +302,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>Liberation Mono</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><a href="https://www.fontsquirrel.com/fonts/liberation-mono"><span class="font-icon font-icon-link"><i class="fa-solid fa-link" aria-label="link"></i></span></a></span> <span class="font-family">Liberation Mono</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Liberation Mono' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-11"></span></span></p>
@@ -314,7 +310,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>Meslo</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><a href="https://github.com/andreberg/Meslo-Font"><span class="font-icon font-icon-link"><i class="fa-solid fa-link" aria-label="link"></i></span></a></span> <span class="font-family">Meslo</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Meslo' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-12"></span></span></p>
@@ -322,7 +318,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>Noto Sans Mono</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><a href="https://fonts.google.com/noto/specimen/Noto+Sans+Mono"><span class="font-icon font-icon-google"><i class="fa-brands fa-google" aria-label="google"></i></span></a></span> <span class="font-family">Noto Sans Mono</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Noto Sans Mono' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-13"></span></span></p>
@@ -330,7 +326,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>Oxygen Mono</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><a href="https://fonts.google.com/specimen/Oxygen+Mono"><span class="font-icon font-icon-google"><i class="fa-brands fa-google" aria-label="google"></i></span></a></span> <span class="font-family">Oxygen Mono</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Oxygen Mono' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-14"></span></span></p>
@@ -338,7 +334,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>PT Mono</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><a href="https://fonts.google.com/specimen/PT+Mono"><span class="font-icon font-icon-google"><i class="fa-brands fa-google" aria-label="google"></i></span></a></span> <span class="font-family">PT Mono</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'PT Mono' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-15"></span></span></p>
@@ -346,7 +342,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>Roboto Mono</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><a href="https://fonts.google.com/specimen/Roboto+Mono"><span class="font-icon font-icon-google"><i class="fa-brands fa-google" aria-label="google"></i></span></a></span> <span class="font-family">Roboto Mono</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Roboto Mono' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-16"></span></span></p>
@@ -354,7 +350,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>SF Mono</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><a href="https://www.cufonfonts.com/font/sf-mono"><span class="font-icon font-icon-link"><i class="fa-solid fa-link" aria-label="link"></i></span></a></span> <span class="font-family">SF Mono</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'SF Mono' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-17"></span></span></p>
@@ -362,7 +358,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>Source Code Pro</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><a href="https://fonts.google.com/specimen/Source+Code+Pro"><span class="font-icon font-icon-google"><i class="fa-brands fa-google" aria-label="google"></i></span></a></span> <span class="font-family">Source Code Pro</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Source Code Pro' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-18"></span></span></p>
@@ -370,7 +366,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>Space Mono</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><a href="https://fonts.google.com/specimen/Space+Mono"><span class="font-icon font-icon-google"><i class="fa-brands fa-google" aria-label="google"></i></span></a></span> <span class="font-family">Space Mono</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Space Mono' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-19"></span></span></p>
@@ -378,7 +374,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>Spline Sans Mono</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><a href="https://fonts.google.com/specimen/Spline+Sans+Mono"><span class="font-icon font-icon-google"><i class="fa-brands fa-google" aria-label="google"></i></span></a></span> <span class="font-family">Spline Sans Mono</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Spline Sans Mono' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-20"></span></span></p>
@@ -386,7 +382,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>Ubuntu Mono</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><a href="https://fonts.google.com/specimen/Ubuntu+Mono"><span class="font-icon font-icon-google"><i class="fa-brands fa-google" aria-label="google"></i></span></a></span> <span class="font-family">Ubuntu Mono</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Ubuntu Mono' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-21"></span></span></p>
@@ -394,465 +390,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="font-item">
 <div class="font-label">
-<p>Victor Mono</p>
+<p><span class="font-icon-parent"><span class="font-icon-group"><span class="font-icon font-icon-ligature"><i class="fa-solid fa-pen-nib" aria-label="pen-nib"></i></span><a href="https://fonts.google.com/specimen/Victor+Mono"><span class="font-icon font-icon-google"><i class="fa-brands fa-google" aria-label="google"></i></span></a></span> <span class="font-family">Victor Mono</span></span></p>
 </div>
 <div class="font-code" style="font-family: 'Victor Mono' !important; font-size: ${size}rem;">
 <p><span><span id="ojs-element-id-22"></span></span></p>
 </div>
 </div>
+<p><br></p>
+<div class="font-small">
+<p><span class="font-icon font-icon-ligature"><i class="fa-solid fa-pen-nib" aria-label="pen-nib"></i></span> Font with Ligature, <span class="font-icon font-icon-google"><i class="fa-brands fa-google" aria-label="google"></i></span> Link to font on Google fonts, <span class="font-icon font-icon-link"><i class="fa-solid fa-link" aria-label="link"></i></span> Link to font</p>
+</div>
 </div>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<section id="properties" class="level3">
-<h3 class="anchored" data-anchor-id="properties">Properties</h3>
-<div class="cell">
-<div class="cell-output-display">
-<div id="rcexxuvggx" class=".gt_table" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rcexxuvggx table {
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#rcexxuvggx thead, #rcexxuvggx tbody, #rcexxuvggx tfoot, #rcexxuvggx tr, #rcexxuvggx td, #rcexxuvggx th {
-  border-style: none;
-}
-
-#rcexxuvggx p {
-  margin: 0;
-  padding: 0;
-}
-
-#rcexxuvggx .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: 0;
-  margin-right: auto;
-  color: #333333;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#rcexxuvggx .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#rcexxuvggx .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#rcexxuvggx .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#rcexxuvggx .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#rcexxuvggx .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#rcexxuvggx .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#rcexxuvggx .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#rcexxuvggx .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#rcexxuvggx .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#rcexxuvggx .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#rcexxuvggx .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#rcexxuvggx .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#rcexxuvggx .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#rcexxuvggx .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#rcexxuvggx .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#rcexxuvggx .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#rcexxuvggx .gt_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#rcexxuvggx .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#rcexxuvggx .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#rcexxuvggx .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#rcexxuvggx .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#rcexxuvggx .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#rcexxuvggx .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#rcexxuvggx .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#rcexxuvggx .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#rcexxuvggx .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#rcexxuvggx .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#rcexxuvggx .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#rcexxuvggx .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#rcexxuvggx .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#rcexxuvggx .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#rcexxuvggx .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#rcexxuvggx .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#rcexxuvggx .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#rcexxuvggx .gt_left {
-  text-align: left;
-}
-
-#rcexxuvggx .gt_center {
-  text-align: center;
-}
-
-#rcexxuvggx .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#rcexxuvggx .gt_font_normal {
-  font-weight: normal;
-}
-
-#rcexxuvggx .gt_font_bold {
-  font-weight: bold;
-}
-
-#rcexxuvggx .gt_font_italic {
-  font-style: italic;
-}
-
-#rcexxuvggx .gt_super {
-  font-size: 65%;
-}
-
-#rcexxuvggx .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#rcexxuvggx .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#rcexxuvggx .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#rcexxuvggx .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#rcexxuvggx .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#rcexxuvggx .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#rcexxuvggx .gt_indent_5 {
-  text-indent: 25px;
-}
-</style>
-<div id="rcexxuvggx" class="reactable html-widget " style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="rcexxuvggx">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"font":["Cascadia Mono","Dank Mono","Fantasque Sans Mono","Fira Code","Fira Mono","Hack","Hasklig","IBM Plex Mono","Inconsolata","JetBrains Mono","Liberation Mono","Meslo","Noto Sans Mono","Oxygen Mono","PT Mono","Roboto Mono","SF Mono","Source Code Pro","Space Mono","Spline Sans Mono","Ubuntu Mono","Victor Mono"],"source":["<span class='source'><a href='https://www.fontsquirrel.com/fonts/cascadia-code'>FontSquirrel<\/span>","<span class='source'><a href='https://philpl.gumroad.com/l/dank-mono'>Paid<\/span>","<span class='source'><a href='https://www.fontsquirrel.com/fonts/fantasque-sans-mono'>FontSquirrel<\/span>","<span class='source'><a href='https://fonts.google.com/specimen/Fira+Code'>Google<\/span>","<span class='source'><a href='https://fonts.google.com/specimen/Fira+Mono'>Google<\/span>","<span class='source'><a href='https://www.fontsquirrel.com/fonts/hack'>FontSquirrel<\/span>","<span class='source'><a href='https://github.com/i-tu/Hasklig'>Github<\/span>","<span class='source'><a href='https://fonts.google.com/specimen/IBM+Plex+Mono'>Google<\/span>","<span class='source'><a href='https://fonts.google.com/specimen/Inconsolata'>Google<\/span>","<span class='source'><a href='https://fonts.google.com/specimen/JetBrains+Mono'>Google<\/span>","<span class='source'><a href='https://www.fontsquirrel.com/fonts/liberation-mono'>FontSquirrel<\/span>","<span class='source'><a href='https://github.com/andreberg/Meslo-Font'>Github<\/span>","<span class='source'><a href='https://fonts.google.com/noto/specimen/Noto+Sans+Mono'>Google<\/span>","<span class='source'><a href='https://fonts.google.com/specimen/Oxygen+Mono'>Google<\/span>","<span class='source'><a href='https://fonts.google.com/specimen/PT+Mono'>Google<\/span>","<span class='source'><a href='https://fonts.google.com/specimen/Roboto+Mono'>Google<\/span>","<span class='source'><a href='https://www.cufonfonts.com/font/sf-mono'>Github<\/span>","<span class='source'><a href='https://fonts.google.com/specimen/Source+Code+Pro'>Google<\/span>","<span class='source'><a href='https://fonts.google.com/specimen/Space+Mono'>Google<\/span>","<span class='source'><a href='https://fonts.google.com/specimen/Spline+Sans+Mono'>Google<\/span>","<span class='source'><a href='https://fonts.google.com/specimen/Ubuntu+Mono'>Google<\/span>","<span class='source'><a href='https://fonts.google.com/specimen/Victor+Mono'>Google<\/span>"],"ligature":["N","Y","Y","Y","N","N","Y","N","N","Y","N","N","N","N","N","N","N","N","N","N","N","Y"]},"columns":[{"id":"font","name":"font","type":"character","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["Cascadia Mono","Dank Mono","Fantasque Sans Mono","Fira Code","Fira Mono","Hack","Hasklig","IBM Plex Mono","Inconsolata","JetBrains Mono","Liberation Mono","Meslo","Noto Sans Mono","Oxygen Mono","PT Mono","Roboto Mono","SF Mono","Source Code Pro","Space Mono","Spline Sans Mono","Ubuntu Mono","Victor Mono"],"html":true,"align":"left","headerStyle":{"font-weight":"normal"}},{"id":"source","name":"source","type":"character","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["<div data-qmd=\"<span class='source'><a href='https://www.fontsquirrel.com/fonts/cascadia-code'>FontSquirrel<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://www.fontsquirrel.com/fonts/cascadia-code'>FontSquirrel<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://philpl.gumroad.com/l/dank-mono'>Paid<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://philpl.gumroad.com/l/dank-mono'>Paid<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://www.fontsquirrel.com/fonts/fantasque-sans-mono'>FontSquirrel<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://www.fontsquirrel.com/fonts/fantasque-sans-mono'>FontSquirrel<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://fonts.google.com/specimen/Fira+Code'>Google<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://fonts.google.com/specimen/Fira+Code'>Google<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://fonts.google.com/specimen/Fira+Mono'>Google<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://fonts.google.com/specimen/Fira+Mono'>Google<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://www.fontsquirrel.com/fonts/hack'>FontSquirrel<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://www.fontsquirrel.com/fonts/hack'>FontSquirrel<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://github.com/i-tu/Hasklig'>Github<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://github.com/i-tu/Hasklig'>Github<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://fonts.google.com/specimen/IBM+Plex+Mono'>Google<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://fonts.google.com/specimen/IBM+Plex+Mono'>Google<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://fonts.google.com/specimen/Inconsolata'>Google<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://fonts.google.com/specimen/Inconsolata'>Google<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://fonts.google.com/specimen/JetBrains+Mono'>Google<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://fonts.google.com/specimen/JetBrains+Mono'>Google<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://www.fontsquirrel.com/fonts/liberation-mono'>FontSquirrel<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://www.fontsquirrel.com/fonts/liberation-mono'>FontSquirrel<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://github.com/andreberg/Meslo-Font'>Github<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://github.com/andreberg/Meslo-Font'>Github<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://fonts.google.com/noto/specimen/Noto+Sans+Mono'>Google<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://fonts.google.com/noto/specimen/Noto+Sans+Mono'>Google<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://fonts.google.com/specimen/Oxygen+Mono'>Google<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://fonts.google.com/specimen/Oxygen+Mono'>Google<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://fonts.google.com/specimen/PT+Mono'>Google<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://fonts.google.com/specimen/PT+Mono'>Google<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://fonts.google.com/specimen/Roboto+Mono'>Google<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://fonts.google.com/specimen/Roboto+Mono'>Google<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://www.cufonfonts.com/font/sf-mono'>Github<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://www.cufonfonts.com/font/sf-mono'>Github<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://fonts.google.com/specimen/Source+Code+Pro'>Google<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://fonts.google.com/specimen/Source+Code+Pro'>Google<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://fonts.google.com/specimen/Space+Mono'>Google<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://fonts.google.com/specimen/Space+Mono'>Google<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://fonts.google.com/specimen/Spline+Sans+Mono'>Google<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://fonts.google.com/specimen/Spline+Sans+Mono'>Google<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://fonts.google.com/specimen/Ubuntu+Mono'>Google<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://fonts.google.com/specimen/Ubuntu+Mono'>Google<\/span><\/p>\n<\/div><\/div>","<div data-qmd=\"<span class='source'><a href='https://fonts.google.com/specimen/Victor+Mono'>Google<\/span>\"><div class='gt_from_md'><p><span class='source'><a href='https://fonts.google.com/specimen/Victor+Mono'>Google<\/span><\/p>\n<\/div><\/div>"],"html":true,"align":"left","headerStyle":{"font-weight":"normal"}},{"id":"ligature","name":"ligature","type":"character","style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["N","Y","Y","Y","N","N","Y","N","N","Y","N","N","N","N","N","N","N","N","N","N","N","Y"],"html":true,"align":"left","headerStyle":{"font-weight":"normal"}}],"pagination":false,"defaultPageSize":10,"showPageSizeOptions":false,"pageSizeOptions":[10,25,50,100],"paginationType":"numbers","showPagination":true,"showPageInfo":false,"minRows":1,"showSortable":true,"height":"auto","theme":{"color":"#333333","backgroundColor":"#FFFFFF","stripedColor":"rgba(128,128,128,0.05)","style":{"fontFamily":"system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"},"headerStyle":{"borderTopStyle":"solid","borderTopWidth":"2px","borderTopColor":"#D3D3D3","borderBottomStyle":"solid","borderBottomWidth":"2px","borderBottomColor":"#D3D3D3"}},"elementId":"rcexxuvggx","dataKey":"a1dc6c3d31e96654df042e294abf8b4b"},"children":[]},"class":"reactR_markup"},"evals":["tag.attribs.columns.0.style","tag.attribs.columns.1.style","tag.attribs.columns.2.style"],"jsHooks":[]}</script>
-</div>
-</div>
-</div>
-</section>
 <section id="test-fonts" class="level3">
 <h3 class="anchored" data-anchor-id="test-fonts">Test fonts</h3>
 <p>These sites take you through the considerations for selecting fonts for coding. You can also test and try out differents for your use-case.</p>
@@ -869,7 +419,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><a href="https://fonts.google.com">Google Fonts</a></li>
 <li><a href="https://fonts.bunny.net">Bunny Fonts</a></li>
 </ul>
-<p>The other option is to download the fonts and use them in your project. There are many fonts on Github.</p>
+<p>The other option is to download the fonts and use them in your project. You can also find many fonts on Github.</p>
 <ul>
 <li><a href="https://www.fontsquirrel.com">Font Squirrel</a></li>
 </ul>
@@ -879,15 +429,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 
 
-<div class="ojs-auto-generated hidden">
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6WyAgeyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiaW5saW5lIjoidHJ1ZSIsInNvdXJjZSI6Imh0bC5odG1sYDxzcGFuPiR7dGV4dH08L3NwYW4+YCIsICJjZWxsTmFtZSI6Im9qcy1lbGVtZW50LWlkLTEifSwgIHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImlubGluZSI6InRydWUiLCJzb3VyY2UiOiJodGwuaHRtbGA8c3Bhbj4ke3RleHR9PC9zcGFuPmAiLCAiY2VsbE5hbWUiOiJvanMtZWxlbWVudC1pZC0yIn0sICB7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJpbmxpbmUiOiJ0cnVlIiwic291cmNlIjoiaHRsLmh0bWxgPHNwYW4+JHt0ZXh0fTwvc3Bhbj5gIiwgImNlbGxOYW1lIjoib2pzLWVsZW1lbnQtaWQtMyJ9LCAgeyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiaW5saW5lIjoidHJ1ZSIsInNvdXJjZSI6Imh0bC5odG1sYDxzcGFuPiR7dGV4dH08L3NwYW4+YCIsICJjZWxsTmFtZSI6Im9qcy1lbGVtZW50LWlkLTQifSwgIHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImlubGluZSI6InRydWUiLCJzb3VyY2UiOiJodGwuaHRtbGA8c3Bhbj4ke3RleHR9PC9zcGFuPmAiLCAiY2VsbE5hbWUiOiJvanMtZWxlbWVudC1pZC01In0sICB7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJpbmxpbmUiOiJ0cnVlIiwic291cmNlIjoiaHRsLmh0bWxgPHNwYW4+JHt0ZXh0fTwvc3Bhbj5gIiwgImNlbGxOYW1lIjoib2pzLWVsZW1lbnQtaWQtNiJ9LCAgeyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiaW5saW5lIjoidHJ1ZSIsInNvdXJjZSI6Imh0bC5odG1sYDxzcGFuPiR7dGV4dH08L3NwYW4+YCIsICJjZWxsTmFtZSI6Im9qcy1lbGVtZW50LWlkLTcifSwgIHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImlubGluZSI6InRydWUiLCJzb3VyY2UiOiJodGwuaHRtbGA8c3Bhbj4ke3RleHR9PC9zcGFuPmAiLCAiY2VsbE5hbWUiOiJvanMtZWxlbWVudC1pZC04In0sICB7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJpbmxpbmUiOiJ0cnVlIiwic291cmNlIjoiaHRsLmh0bWxgPHNwYW4+JHt0ZXh0fTwvc3Bhbj5gIiwgImNlbGxOYW1lIjoib2pzLWVsZW1lbnQtaWQtOSJ9LCAgeyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiaW5saW5lIjoidHJ1ZSIsInNvdXJjZSI6Imh0bC5odG1sYDxzcGFuPiR7dGV4dH08L3NwYW4+YCIsICJjZWxsTmFtZSI6Im9qcy1lbGVtZW50LWlkLTEwIn0sICB7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJpbmxpbmUiOiJ0cnVlIiwic291cmNlIjoiaHRsLmh0bWxgPHNwYW4+JHt0ZXh0fTwvc3Bhbj5gIiwgImNlbGxOYW1lIjoib2pzLWVsZW1lbnQtaWQtMTEifSwgIHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImlubGluZSI6InRydWUiLCJzb3VyY2UiOiJodGwuaHRtbGA8c3Bhbj4ke3RleHR9PC9zcGFuPmAiLCAiY2VsbE5hbWUiOiJvanMtZWxlbWVudC1pZC0xMiJ9LCAgeyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiaW5saW5lIjoidHJ1ZSIsInNvdXJjZSI6Imh0bC5odG1sYDxzcGFuPiR7dGV4dH08L3NwYW4+YCIsICJjZWxsTmFtZSI6Im9qcy1lbGVtZW50LWlkLTEzIn0sICB7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJpbmxpbmUiOiJ0cnVlIiwic291cmNlIjoiaHRsLmh0bWxgPHNwYW4+JHt0ZXh0fTwvc3Bhbj5gIiwgImNlbGxOYW1lIjoib2pzLWVsZW1lbnQtaWQtMTQifSwgIHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImlubGluZSI6InRydWUiLCJzb3VyY2UiOiJodGwuaHRtbGA8c3Bhbj4ke3RleHR9PC9zcGFuPmAiLCAiY2VsbE5hbWUiOiJvanMtZWxlbWVudC1pZC0xNSJ9LCAgeyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiaW5saW5lIjoidHJ1ZSIsInNvdXJjZSI6Imh0bC5odG1sYDxzcGFuPiR7dGV4dH08L3NwYW4+YCIsICJjZWxsTmFtZSI6Im9qcy1lbGVtZW50LWlkLTE2In0sICB7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJpbmxpbmUiOiJ0cnVlIiwic291cmNlIjoiaHRsLmh0bWxgPHNwYW4+JHt0ZXh0fTwvc3Bhbj5gIiwgImNlbGxOYW1lIjoib2pzLWVsZW1lbnQtaWQtMTcifSwgIHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImlubGluZSI6InRydWUiLCJzb3VyY2UiOiJodGwuaHRtbGA8c3Bhbj4ke3RleHR9PC9zcGFuPmAiLCAiY2VsbE5hbWUiOiJvanMtZWxlbWVudC1pZC0xOCJ9LCAgeyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiaW5saW5lIjoidHJ1ZSIsInNvdXJjZSI6Imh0bC5odG1sYDxzcGFuPiR7dGV4dH08L3NwYW4+YCIsICJjZWxsTmFtZSI6Im9qcy1lbGVtZW50LWlkLTE5In0sICB7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJpbmxpbmUiOiJ0cnVlIiwic291cmNlIjoiaHRsLmh0bWxgPHNwYW4+JHt0ZXh0fTwvc3Bhbj5gIiwgImNlbGxOYW1lIjoib2pzLWVsZW1lbnQtaWQtMjAifSwgIHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImlubGluZSI6InRydWUiLCJzb3VyY2UiOiJodGwuaHRtbGA8c3Bhbj4ke3RleHR9PC9zcGFuPmAiLCAiY2VsbE5hbWUiOiJvanMtZWxlbWVudC1pZC0yMSJ9LCAgeyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiaW5saW5lIjoidHJ1ZSIsInNvdXJjZSI6Imh0bC5odG1sYDxzcGFuPiR7dGV4dH08L3NwYW4+YCIsICJjZWxsTmFtZSI6Im9qcy1lbGVtZW50LWlkLTIyIn1dfQ==
+{"contents":[
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-1"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-2"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-3"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-4"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-5"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-6"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-7"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-8"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-9"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-10"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-11"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-12"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-13"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-14"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-15"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-16"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-17"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-18"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-19"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-20"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-21"}
+,
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${text}</span>`", "cellName":"ojs-element-id-22"}
+]}
 </script>
-</div>
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBjaG9pY2UgPSBJbnB1dHMuc2VsZWN0KFtcIlNlbGVjdGlvblwiLCBcIlRleHRcIl0sIHtsYWJlbDogXCJJbnB1dCB0eXBlXCIsIG11bHRpcGxlOiBmYWxzZX0pXG4vL3ZpZXdvZiBzaXplID0gSW5wdXRzLnJhbmdlKFsxLCAyXSwge3ZhbHVlOiAxLCBzdGVwOiAwLjEsIGxhYmVsOiBcIkZvbnQgc2l6ZVwifSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiB0ZXh0ID0ge1xuICBpZiAoY2hvaWNlID09PSBcIlNlbGVjdGlvblwiKSB7XG5cbiAgICByZXR1cm4gSW5wdXRzLnNlbGVjdChbXG4gICAgXCJvTzA4IGlJbEwxIGc5cUNHUSB+LSs9PlwiLFxuICAgIFwib8O2w6TDuE8ww5ggfExsMUlpdDcgJyEjJSYvXFxcXCAoKVtde308PiAkwqJAKl5+LTo7LF/CsXw/Kz0gYWdrdHByeVwiLFxuICAgIFwiSD0geD0gKz0gLT0gPD0gPj0gfj0gXj0gfD0gJT0gLT4gJj1cIixcbiAgICBcIj09ICE9ICYmICsrIHw+IDw+IDwtIDw9IDx+IC89IHw9PiAtPiAtPj4gX19cIixcbiAgICBcIiwuIDo7XCIsXG4gICAgXCJ8TGwxSXQhXCIsXG4gICAgXCJbXSgpe308PkAjXCIsXG4gICAgXG4gICAgXCJUaGUgcXVpY2sgYnJvd24gYm94IGp1bXBzIG92ZXIgYSBsYXp5IGRvZ1wiLFxuICAgIFwiQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVogw4XDhMOGw5bDmMORXCIsXG4gICAgXCJhYmNkZWZnaGxpamtsbW5vcHFyc3R1dnd4eXogw6XDpMOmw7bDuMOxXCIsXG4gICAgXCIwMTIzNDU2Nzg5IFFSVENaXCIsXG4gICAgXCJ8W2FjZXJzdXZ3eHptbm8gaSBidGZoa2wgZCBnanBxeV18XCIsXG4gICAgXCIwb8O2w6TDuE9cIixcbiAgICBcInByaW50KCdoZWxsbyB3b3JsZCcpXCIsXG4gICAgJ2NhdChcIk1lYW4gb2YgMSwgMiwgMyBpc1wiLCBtZWFuKGMoMSwgMiwgMykpKScsXG4gICAgJ2VjaG8gXCJDdXJyZW50IGRpcmVjdG9yeSBjb250ZW50czpcIiAmJiBscyAtbCcsXG4gICAgJ1NFTEVDVCBuYW1lLCBhZ2UgRlJPTSB1c2VycyBXSEVSRSBhZ2UgPiAzMCBPUkRFUiBCWSBhZ2UgREVTQzsnLFxuICAgIFwiYm9keSB7IGZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBjb2xvcjogIzMzMzsgfVwiLFxuICAgICc8IURPQ1RZUEUgaHRtbD48aHRtbD48Ym9keT48aDE+SGVsbG8sIFdvcmxkITwvaDE+PC9ib2R5PjwvaHRtbD4nLFxuICAgICdwcmludChmXCJTdW0gb2YgMSwgMiwgYW5kIDMgaXM6IHtzdW0oWzEsIDIsIDNdKX0nLFxuICAgICdjb25zb2xlLmxvZyhgQXJyYXkgc29ydGVkOiAke1szLCAxLCA0XS5zb3J0KChhLCBiKSA9PiBhIC0gYil9YCk7JyxcbiAgICAnc3RkOjpjb3V0IDw8IFwiTWF4IG9mIDEwIGFuZCAyMCBpcyBcIiA8PCBzdGQ6Om1heCgxMCwgMjApIDw8IHN0ZDo6ZW5kbDsnXG4gICAgXSx7bGFiZWw6IFwiU2VsZWN0IHRleHRcIn0pO1xuXG4gIH0gZWxzZSBpZiAoY2hvaWNlID09PSBcIlRleHRcIikge1xuICAgIHJldHVybiBJbnB1dHMudGV4dGFyZWEoe2xhYmVsOiBcIkVudGVyIHRleHRcIiwgdmFsdWU6IFxuYFxuaWYgKHJlc3VsdCA+IDUgJiYgeCA8PSAzIHwgIWlzLm5hKHgpKXtcbiAgcHJpbnQoJ0NvbmRpdGlvbiBtZXQnKVxufSBlbHNlIHtcbiAgcHJpbnQoJ0NvbmRpdGlvbiBub3QgbWV0Jylcbn1cbmAudHJpbSgpXG4gICAgXG4gICAgfSk7XG4gIH1cbn1cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnY2hvaWNlJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3RleHQnKSJ9XX0=
+{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"viewof choice = Inputs.select([\"Selection\", \"Text\"], {label: \"Input type\", multiple: false})\n//viewof size = Inputs.range([1, 2], {value: 1, step: 0.1, label: \"Font size\"})\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"viewof text = {\n  if (choice === \"Selection\") {\n\n    return Inputs.select([\n    \"oO08 iIlL1 g9qCGQ ~-+=>\",\n    \"oöäøO0Ø |Ll1Iit7 '!#%&/\\\\ ()[]{}<> $¢@*^~-:;,_±|?+= agktpry\",\n    \"H= x= += -= <= >= ~= ^= |= %= -> &=\",\n    \"== != && ++ |> <> <- <= <~ /= |=> -> ->> __\",\n    \",. :;\",\n    \"|Ll1It!\",\n    \"[](){}<>@#\",\n    \n    \"The quick brown box jumps over a lazy dog\",\n    \"ABCDEFGHIJKLMNOPQRSTUVWXYZ ÅÄÆÖØÑ\",\n    \"abcdefghlijklmnopqrstuvwxyz åäæöøñ\",\n    \"0123456789 QRTCZ\",\n    \"|[acersuvwxzmno i btfhkl d gjpqy]|\",\n    \"0oöäøO\",\n    \"print('hello world')\",\n    'cat(\"Mean of 1, 2, 3 is\", mean(c(1, 2, 3)))',\n    'echo \"Current directory contents:\" && ls -l',\n    'SELECT name, age FROM users WHERE age > 30 ORDER BY age DESC;',\n    \"body { font-family: 'Arial', sans-serif; color: #333; }\",\n    '<!DOCTYPE html><html><body><h1>Hello, World!</h1></body></html>',\n    'print(f\"Sum of 1, 2, and 3 is: {sum([1, 2, 3])}',\n    'console.log(`Array sorted: ${[3, 1, 4].sort((a, b) => a - b)}`);',\n    'std::cout << \"Max of 10 and 20 is \" << std::max(10, 20) << std::endl;'\n    ],{label: \"Select text\"});\n\n  } else if (choice === \"Text\") {\n    return Inputs.textarea({label: \"Enter text\", value: \n`\nif (result > 5 && x <= 3 | !is.na(x)){\n  print('Condition met')\n} else {\n  print('Condition not met')\n}\n`.trim()\n    \n    });\n  }\n}\n"},{"methodName":"interpretQuiet","source":"shinyInput('choice')"},{"methodName":"interpretQuiet","source":"shinyInput('text')"}]}
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
@@ -976,9 +568,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -988,17 +581,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1011,135 +595,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    const typesetMath = (el) => {
-      if (window.MathJax) {
-        // MathJax Typeset
-        window.MathJax.typeset([el]);
-      } else if (window.katex) {
-        // KaTeX Render
-        var mathElements = el.getElementsByClassName("math");
-        var macros = [];
-        for (var i = 0; i < mathElements.length; i++) {
-          var texText = mathElements[i].firstChild;
-          if (mathElements[i].tagName == "SPAN") {
-            window.katex.render(texText.data, mathElements[i], {
-              displayMode: mathElements[i].classList.contains('display'),
-              throwOnError: false,
-              macros: macros,
-              fleqn: false
-            });
-          }
-        }
-      }
-    }
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        typesetMath(container);
-        return container.innerHTML
-      } else {
-        typesetMath(note);
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      typesetMath(note);
-      return note.innerHTML;
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1183,7 +638,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1209,32 +663,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1297,18 +725,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>2024 Roy Francis</p>
-</div>   
+    <div class="nav-footer-left">2024 Roy Francis</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
-    <div class="nav-footer-right">
-<p>Published with <a href="https://quarto.org/">Quarto</a> v1.4.506</p>
-</div>
+    <div class="nav-footer-right">Published with <a href="https://quarto.org/">Quarto</a> v1.3.433</div>
   </div>
 </footer>
-
 
 
 

@@ -75,7 +75,7 @@ if (result > 5 && x <= 3 | !is.na(x)){
 
 ```{r}
 #| results: asis
-#| 
+#|
 library(dplyr)
 
 dfr <- read.delim("fonts.tsv", sep = "\t", header = TRUE) %>% arrange(font)
@@ -83,12 +83,25 @@ dfr <- read.delim("fonts.tsv", sep = "\t", header = TRUE) %>% arrange(font)
 families <- dfr$font
 links <- dfr$link
 sources <- dfr$source
+# lig <- ifelse(dfr$ligature == "Y", paste0('<span><i class="fa-solid fa-pen-nib"></i></span>'), "")
+# lnk <- paste0('<span class="font-property">', ifelse(sources == "Google",
+#     paste0('<a href="', links, '"><i class="fa-brands fa-google"></i></a>'),
+#     paste0('<a href="', links, '"><i class="fa-solid fa-link"></i></a>')
+# ), "</span>")
+# fp <- paste0("<span>", lig, lnk, "</span>")
+
+lig <- ifelse(dfr$ligature == "Y", paste0("[{{< fa pen-nib >}}]{.font-icon .font-icon-ligature}"), "")
+lnk <- paste0(ifelse(sources == "Google",
+    paste0("[[{{< fa brands google >}}]{.font-icon .font-icon-google}](", links, ")"),
+    paste0("[[{{< fa link >}}]{.font-icon .font-icon-link}](", links, ")")
+))
+fp <- paste0("[[", lig, lnk, "]{.font-icon-group} [", families, "]{.font-family}]{.font-icon-parent}")
 
 for (i in seq_along(families)) {
     family <- families[i]
     cat("::: {.font-item}\n")
     cat("::: {.font-label}\n")
-    cat(paste0(family, "\n"))
+    cat(paste0(fp[i], "\n"))
     cat(":::\n")
     cat(paste0("::: {.font-code style=\"font-family: '", family, "' !important; font-size: ${size}rem;\"}\n"))
     cat("${text}\n")
@@ -97,13 +110,19 @@ for (i in seq_along(families)) {
 }
 ```
 
+<br>
+
+::: {.font-small}
+[{{< fa pen-nib >}}]{.font-icon .font-icon-ligature} Font with Ligature, [{{< fa brands google >}}]{.font-icon .font-icon-google} Link to font on Google fonts, [{{< fa link >}}]{.font-icon .font-icon-link} Link to font  
+:::
+
 :::
 
 ## Info
 
-### Properties
-
 ```{r}
+#| include: false
+
 library(gt)
 
 dfr %>%
@@ -132,7 +151,7 @@ Where to find fonts? The easiest option is webfonts where you can link the fonts
 - [Google Fonts](https://fonts.google.com)
 - [Bunny Fonts](https://fonts.bunny.net)
 
-The other option is to download the fonts and use them in your project. There are many fonts on Github.
+The other option is to download the fonts and use them in your project. You can also find many fonts on Github.
 
 - [Font Squirrel](https://www.fontsquirrel.com)
 
